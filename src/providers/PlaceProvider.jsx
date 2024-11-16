@@ -7,6 +7,7 @@ export const PlaceContext = createContext(null);
 
 function PlaceProvider({ children }) {
   const [places, setPlaces] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     fetch("/places.json")
@@ -19,6 +20,8 @@ function PlaceProvider({ children }) {
   const placesInfo = {
     places,
     setPlaces,
+    activeIndex, 
+    setActiveIndex
   };
   return (
     <PlaceContext.Provider value={placesInfo}>

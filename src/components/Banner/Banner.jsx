@@ -1,10 +1,26 @@
 import Navbar from "../Navbar/Navbar";
-import bannerImg from "../../assets/Rectangle 1.png";
 import BannerSlider from "../shared/BannerSlider";
 import { Link } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { PlaceContext } from "../../providers/PlaceProvider";
 
 
 function Banner() {
+
+  const [data, setData] = useState([]);
+  
+  const { places, activeIndex } = useContext(PlaceContext);
+
+
+useEffect(() => {
+ const data =  places.find(places=> {
+  return places.id === activeIndex;
+})
+setData(data)
+} ,[places, activeIndex])
+
+console.log(activeIndex)
+
   return (
     <div className="relative">
       <Navbar></Navbar>
@@ -12,7 +28,7 @@ function Banner() {
         <div
           className="hero min-h-screen "
           style={{
-            backgroundImage: `url(${bannerImg})`,
+            backgroundImage: `url(${data?.image})`,
           }}
         >
           <div className="hero-overlay bg-opacity-80"></div>
