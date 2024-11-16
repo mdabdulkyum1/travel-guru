@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "name": "Cox's Bazar",
+      "description": "Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach.",
+      "image": "https://i.ibb.co/XtfG0sZ/Rectangle-1.png",
+      "buttonText": "Booking",
+      "buttonLink": "url-to-coxs-bazar-booking-page"
+    },
+    {
+      "id": 2,
+      "name": "Sreemangal",
+      "description": "Sreemangal is known for its tea gardens, lush green hills, and scenic beauty.",
+      "image": "https://i.ibb.co/GxD9pgJ/Sreemongol.png",
+      "buttonText": "Booking",
+      "buttonLink": "url-to-sreemangal-booking-page"
+    },
+    {
+      "id": 3,
+      "name": "Sundarbans",
+      "description": "The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra, and Meghna Rivers in the Bay of Bengal.",
+      "image": "https://i.ibb.co/0q9srKb/sundorbon.png",
+      "buttonText": "Booking",
+      "buttonLink": "url-to-sundarbans-booking-page"
+    },
+    {
+      "id": 4,
+      "name": "Sajek",
+      "description": "Sajek Valley is a beautiful destination in the Chittagong Hill Tracts, known for its lush green hills, scenic views, and serene atmosphere.",
+      "image": "https://i.ibb.co/FxPRYR4/Sajek.png",
+      "buttonText": "Booking",
+      "buttonLink": "url-to-sajek-booking-page"
+    }
+  ]
+  
